@@ -60,7 +60,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	var getMessage = exports.getMessage = function getMessage() {
-	  return 'Hello world!';
+	  return 'Hello world!!!!!!!!!';
 	};
 
 /***/ }
