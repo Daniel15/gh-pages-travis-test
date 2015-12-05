@@ -1,3 +1,4 @@
+var githubPages = require('gulp-gh-pages');
 var gulp = require('gulp');
 var webpackStream = require('webpack-stream');
 
@@ -31,6 +32,9 @@ gulp.task('copy-misc', function() {
     .pipe(gulp.dest(SITE_OUTPUT_DIR));
 });
 
-gulp.task('deploy', ['build', 'copy-misc'], function() {
-
+gulp.task('publish', ['build', 'copy-misc'], function() {
+  return gulp.src(SITE_OUTPUT_DIR + '**/*')
+    .pipe(githubPages({
+      remoteUrl: 'git@github.com:Daniel15/gh-pages-travis-test.git',
+    }));
 });
