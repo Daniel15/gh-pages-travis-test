@@ -35,6 +35,6 @@ gulp.task('copy-misc', function() {
 gulp.task('publish', ['build', 'copy-misc'], function() {
   return gulp.src(SITE_OUTPUT_DIR + '**/*')
     .pipe(githubPages({
-      remoteUrl: 'git@github.com:Daniel15/gh-pages-travis-test.git',
+      remoteUrl: 'https://' + process.env.GH_TOKEN + '@github.com/Daniel15/gh-pages-travis-test.git',
     }));
 });

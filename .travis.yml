@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '4.1'
+script: gulp deploy
+before_script:
+  - git config --global user.email "build@dan.cx"
+  - git config --global user.name "DanBuild"
+env:
+  global:
+    secure: 7T1251E8FJj703fpCRxPvyb71MkYSuyN9UOkBIFeSDVVGi8c1Y13/thbxcJOBLYlyIDMfMfySMXV4vmWiyR3PfnCc7GHFWKAWzQ3NCJY2HtLXlRzC1gUrRhykCnj9cmtBjf0QNXdlVBgyXSwdhKky14hAggEU9kwqUe1NdwL5JZPcyZuuz2NXvdtzdFjLqJHELH/4qO8LhsJobsNKSt8sK7sAHAD7sByZmGGAmgw0K1h2s1PIYZwxRnII67jtqbKFRVvK3ohwGYfq6KU4lWTAtNxK/4RPjKcQvx1OfNz6TqPG6QDS3alKVkQh++ZWBAdmdaCiFmWrxehpnw4DZ9+tboN/P6ydEcDOiatdUMsdfVRyyJn8dDQcRk1M4KpDhAh0p4GbH181fHma3+Ewogji1HaZhyO0OD6rqZOmymSojG487XJkPyW45qYeV51c42VQJBUE70xCBkjcTPAjaC8PuZszZiDa7UQtwXGfQ7WxsdVd5Ggc+CY26JrfrPRX8rhbRpOdlsfMZGLsOT9jcs6ZOXeiSBofHmBb7MV9uOJZLqB62brMqr7MjNGwQJU6fF6D/kpRlEW626reBrWrJPVaEe3qlMTqQuq8B6WY7LTX+/BGmDnnszMdKLqeKNz4R3fQKQbsSgUP+8tDfa3yRp/7cm1YW4Dhml2WXuyLcPKHLY=
