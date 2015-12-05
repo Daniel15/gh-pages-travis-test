@@ -1,0 +1,28 @@
+{
+  "name": "gh-pages-travis-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel15/gh-pages-travis-test.git"
+  },
+  "author": "Daniel Lo Nigro <daniel@dan.cx> (http://dan.cx/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel15/gh-pages-travis-test/issues"
+  },
+  "homepage": "https://github.com/Daniel15/gh-pages-travis-test#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.4",
+    "webpack": "^1.12.9",
+    "webpack-stream": "^2.3.0"
+  }
+}
